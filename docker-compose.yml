@@ -1,0 +1,9 @@
+services:
+  srbminer:
+    image: srbminer:latest
+    container_name: srbminer
+    command: >
+      --algorithm randomx
+      --pool YOUR_MINING_POOL:YOUR_MINING_POOL_PORT
+      --wallet YOUR_WALLET_ADDRESS.YOUR_WORKER_NAME
+    restart: unless-stopped
