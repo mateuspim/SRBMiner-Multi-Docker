@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-ARG VERSION_TAG=2.8.8
+ARG VERSION_TAG=2.9.2
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y wget tar \
